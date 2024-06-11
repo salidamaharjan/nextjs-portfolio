@@ -1,11 +1,12 @@
 type DetailSectionProps = {
     children: React.ReactNode,
-    className?: string
+    className?: string,
+    id: string
 }
 export default function DetailSection(
-    {children, className}: DetailSectionProps
+    {children, className, id}: DetailSectionProps
 ) {
-    return <h1 className={`${className} h-[200px] text-xl font-bold`}>
+    return <h1 id={id} className={`${className} h-[500px] text-xl font-bold`}>
         {children}
     </h1>
 }

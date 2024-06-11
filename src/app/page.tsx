@@ -3,16 +3,16 @@ import DetailSection from "@/components/ui/DetailSection";
 export default function Home() {
     return (
         <div className="flex flex-col justify-evenly gap-2 p-6">
-            <DetailSection>
+            <DetailSection id="about-me">
                 About Me
             </DetailSection>
-            <DetailSection>
+            <DetailSection id="projects">
                 Projects
             </DetailSection>
-            <DetailSection>
+            <DetailSection id="education">
                 Education
             </DetailSection>
-            <DetailSection className="flex flex-col">
+            <DetailSection id="contact-me" className="flex flex-col">
                 Contact Me
                 <div className="font-normal">
                     <a href="https://www.linkedin.com/in/salida-maharjan-6381b9173/" target="_blank"><Linkedin/>
