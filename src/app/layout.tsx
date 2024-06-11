@@ -18,7 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`bg-gray-100 ${inter.className}`}>
-        <header className="flex items-center h-20 bg-white justify-between p-4">
+        <header className="flex items-center h-14 bg-white justify-between px-4">
             <div className="text-2xl">
                 <a href="#about-me">Salida Maharjan</a>
             </div>
