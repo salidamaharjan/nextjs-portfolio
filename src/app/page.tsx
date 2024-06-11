@@ -4,17 +4,19 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <div className="flex gap-4 flex-col p-6">
-            <div className="flex justify-evenly items-center bg-fixed bg-[url('/background.png')] h-[500px]">
+        <div className="flex gap-4 flex-col md:p-6 p-4">
+            <div
+                className="flex justify-evenly items-center bg-fixed bg-[url('/background.png')] md:h-[500px] h-[100px]">
                 <div>
-                    <div className="font-normal text-md">
+                    <div className="font-normal md:text-md text-xs">
                         Hello
                     </div>
-                    <div className="font-medium text-2xl"> I am Salida</div>
-                    <div className="text-lg font-normal">Junior Full Stack Software Developer</div>
+                    <div className="font-medium md:text-2xl text:md"> I am Salida</div>
+                    <div className="md:text-lg text-xs font-normal">Junior Full Stack Software Developer</div>
                 </div>
                 <div>
-                    <Image className="rounded-md" width={300} height={300} src="/img.jpg" alt="My image"/>
+                    <Image className="rounded-md md:width={300} md:height={300}" width={90} height={90} src="/img.jpg"
+                           alt="My image"/>
                 </div>
             </div>
             <div>

@@ -19,10 +19,10 @@ export default function RootLayout({
         <html lang="en">
         <body className={`bg-gray-100 ${inter.className}`}>
         <header className="flex items-center h-14 bg-white justify-between px-4">
-            <div className="text-2xl">
+            <div className="md:text-2xl text-sm">
                 <a href="#about-me">Salida Maharjan</a>
             </div>
-            <nav className="flex gap-7">
+            <nav className="flex gap-7 text-sm md:text-2xl">
                 <NavBar href="#about-me">
                     About Me
                 </NavBar>
