@@ -15,7 +15,7 @@ export default function Home() {
                     <div className="md:text-lg text-xs font-normal">Junior Full Stack Software Developer</div>
                 </div>
                 <div>
-                    <Image className="rounded-md md:width={300} md:height={300}" width={90} height={90} src="/img.jpg"
+                    <Image className="rounded-md md:w-[300px] md:h-[300px]" width={90} height={90} src="/img.jpg"
                            alt="My image"/>
                 </div>
             </div>
