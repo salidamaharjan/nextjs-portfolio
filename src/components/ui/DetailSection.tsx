@@ -6,7 +6,7 @@ type DetailSectionProps = {
 export default function DetailSection(
     {children, className, id}: DetailSectionProps
 ) {
-    return <h1 id={id} className={`${className} h-[500px] text-xl font-bold`}>
+    return <h1 id={id} className={`${className} md:text-xl text-md font-bold`}>
         {children}
     </h1>
 }
