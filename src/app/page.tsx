@@ -20,35 +20,43 @@ export default function Home() {
                 </div>
             </div>
             <div className="flex flex-col gap-4">
-                <DetailSection id="about-me">
-                    <div>About Me</div>
-                    <div className="font-normal md:text-md text-sm">Enthusiastic Junior Full Stack Developer,
-                        detail-oriented and motivated coding bootcamp
-                        graduate with a passion for software development. Seeking an entry- level position where I can
-                        apply my programming skills and contribute to innovative projects.
+                <DetailSection id="about-me" className="grid grid-cols-2 justify-around bg-gray-200 p-4">
+                    <Image className="rounded-md md:w-[250px] md:h-[250px] self-center" width={60} height={60}
+                           src="/aboutMe.jpg"
+                           alt="My image"/>
+                    <div>
+                        <div>About Me</div>
+                        <div className="font-normal md:text-md text-sm">Enthusiastic Junior Full Stack Developer,
+                            detail-oriented and motivated coding bootcamp
+                            graduate with a passion for software development. Seeking an entry- level position where I
+                            can
+                            apply my programming skills and contribute to innovative projects.
+                        </div>
+                        <div className="font-normal md:text-md text-sm">
+                            <div className="md:font-medium font-medium text-red-700 text-sm md:text-md">My Skills</div>
+                            <ul className="pl-4">
+                                <li className="list-disc"> Proficient in HTML, CSS, JavaScript.
+                                </li>
+                                <li className="list-disc"> Experience with front-end frameworks/libraries such as
+                                    React.js
+                                    and Bootstrap, BULMA,
+                                    Chart.js,
+                                    Tailwind.
+                                </li>
+                                <li className="list-disc">
+                                    Familiarity with back-end technologies including Node.js, Express.js, and database
+                                    management
+                                    system MongoDB, MySQL.
+                                </li>
+                                <li className="list-disc">
+                                    Understanding of version control with Git and GitHub.
+                                </li>
+                                <li className="list-disc"> Knowledge of Agile development methodologies.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="font-normal md:text-md text-sm">
-                        <div className="md:font-medium font-medium text-red-700 text-sm md:text-md">My Skills</div>
-                        <ul className="pl-4">
-                            <li className="list-disc"> Proficient in HTML, CSS, JavaScript.
-                            </li>
-                            <li className="list-disc"> Experience with front-end frameworks/libraries such as React.js
-                                and Bootstrap, BULMA,
-                                Chart.js,
-                                Tailwind.
-                            </li>
-                            <li className="list-disc">
-                                Familiarity with back-end technologies including Node.js, Express.js, and database
-                                management
-                                system MongoDB, MySQL.
-                            </li>
-                            <li className="list-disc">
-                                Understanding of version control with Git and GitHub.
-                            </li>
-                            <li className="list-disc"> Knowledge of Agile development methodologies.
-                            </li>
-                        </ul>
-                    </div>
+
                 </DetailSection>
                 <DetailSection id="projects">
                     <div>Projects</div>
@@ -80,18 +88,22 @@ export default function Home() {
                 <DetailSection id="education">
                     <div>Education</div>
                     <div className="font-normal md:text-sm text-xs">
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Full Stack Web Development Boot
+                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Full Stack Web
+                            Development Boot
                             Camp
                         </div>
                         University Of Minnesota partnership with edX Minneapolis,
                         MN
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Bachelor of Science in Software
+                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Bachelor of Science
+                            in Software
                             Development</div> Grand Canyon University
                         Phoenix, AZ
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Post Basic Bachelor in
+                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Post Basic Bachelor
+                            in
                             Nursing</div>
                         Kathmandu Model College of Nursing Kathmandu, Nepal
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Associate Degree in Nursing</div>
+                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Associate Degree in
+                            Nursing</div>
                         Manmohan Memorial Institute of Health Sciences Kathmandu, Nepal
                     </div>
                 </DetailSection>
