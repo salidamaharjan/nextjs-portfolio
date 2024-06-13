@@ -57,7 +57,7 @@ export default function Home() {
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="projects">
+                <DetailSection id="projects" className="bg-gray-200">
                     <div>Projects</div>
                     <div className="font-normal text-center md:text-sm md:grid-cols-3 grid-cols-2 grid text-xs gap-4">
                         <div>
@@ -130,7 +130,7 @@ export default function Home() {
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="education">
+                <DetailSection id="education" className="bg-gray-200">
                     <div>Education</div>
                     <div className="grid grid-cols-2 gap-4 font-normal md:text-sm text-xs">
                         <div>
@@ -175,7 +175,7 @@ export default function Home() {
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="contact-me" className="flex flex-col">
+                <DetailSection id="contact-me" className="flex flex-col bg-gray-200">
                     <div>Contact Me</div>
                     <div className="font-normal">
                         <a href="https://www.linkedin.com/in/salida-maharjan-6381b9173/" target="_blank"><Linkedin/>
