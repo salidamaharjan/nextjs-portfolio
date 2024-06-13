@@ -19,7 +19,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-4">
                 <DetailSection id="about-me"
-                               className="md:grid md:grid-cols-2 grid gap-4 md:justify-around bg-gray-200 p-4">
+                               className="md:grid md:grid-cols-2 grid gap-4 md:justify-around rounded-t-md bg-gray-200 p-4">
                     <Image className="rounded-md md:w-[250px] md:h-[250px] md:self-center justify-center" width={150}
                            height={150}
                            src="/aboutMe.jpg"
@@ -57,10 +57,10 @@ export default function Home() {
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="projects" className="bg-gray-200">
+                <DetailSection id="projects" className="bg-gray-200 flex flex-col gap-2 text-center">
                     <div>Projects</div>
                     <div className="font-normal text-center md:text-sm md:grid-cols-3 grid-cols-2 grid text-xs gap-4">
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">
                                 Food and Recipes
                             </div>
@@ -72,7 +72,7 @@ export default function Home() {
                             recipes.
                             Users can save recipes to their favorites.
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Expenses
                                 Tracker
                             </div>
@@ -84,7 +84,7 @@ export default function Home() {
                             the
                             line graph and pie chart.
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Weather
                                 Dashboard
                                 App
@@ -97,7 +97,7 @@ export default function Home() {
                             This app shows the weather for the current day and up to next 5 days. Data is retrieved from
                             open weather API.
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Employee Tracker
                                 SQL
                             </div>
@@ -108,7 +108,7 @@ export default function Home() {
                             The user can view all the employee from DB, add employee, update role, manager and view the
                             budget stored in DB. User can delete the data as well.
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Note Taker
                                 Express.js
                             </div>
@@ -118,7 +118,7 @@ export default function Home() {
                             </a>
                             The user can use this app to create a note, edit, delete and save according to work plan.
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">PWA Text
                                 Editor
                             </div>
@@ -130,10 +130,10 @@ export default function Home() {
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="education" className="bg-gray-200">
+                <DetailSection id="education" className="bg-gray-200 flex flex-col gap-2 text-center">
                     <div>Education</div>
                     <div className="grid grid-cols-2 gap-4 font-normal md:text-sm text-xs">
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Full Stack Web
                                 Development Boot
                                 Camp
@@ -143,7 +143,7 @@ export default function Home() {
                             University Of Minnesota partnership with edX Minneapolis,
                             MN
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Bachelor of
                                 Science
                                 in Software
@@ -154,7 +154,7 @@ export default function Home() {
                             Grand Canyon University
                             Phoenix, AZ
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Post Basic
                                 Bachelor
                                 in
@@ -164,7 +164,7 @@ export default function Home() {
                                    height={100}/>
                             Kathmandu Model College of Nursing Kathmandu, Nepal
                         </div>
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Associate Degree
                                 in
                                 Nursing
@@ -175,9 +175,10 @@ export default function Home() {
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="contact-me" className="flex flex-col bg-gray-200">
+                <DetailSection id="contact-me" className="flex flex-col text-center bg-gray-200 rounded-b-md">
                     <div>Contact Me</div>
-                    <div className="font-normal">
+                    <div className="text-md font-normal">You can connect with me through</div>
+                    <div className="font-normal flex gap-2 justify-center">
                         <a href="https://www.linkedin.com/in/salida-maharjan-6381b9173/" target="_blank"><Linkedin/>
                         </a>
                         <a href="https://github.com/salidamaharjan" target="_blank">
