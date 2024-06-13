@@ -14,17 +14,17 @@ export default function Home() {
                     <div className="font-medium md:text-2xl text:md"> I am Salida</div>
                     <div className="font-normal md:text-md text-xs">Junior Full Stack Software Developer</div>
                 </div>
-                <div>
-                    <Image className="rounded-md md:w-[300px] md:h-[300px]" width={90} height={90} src="/img.jpg"
-                           alt="My image"/>
-                </div>
+                <Image className="rounded-md md:w-[300px] md:h-[300px]" width={90} height={90} src="/img.jpg"
+                       alt="My image"/>
             </div>
             <div className="flex flex-col gap-4">
-                <DetailSection id="about-me" className="grid grid-cols-2 justify-around bg-gray-200 p-4">
-                    <Image className="rounded-md md:w-[250px] md:h-[250px] self-center" width={60} height={60}
+                <DetailSection id="about-me"
+                               className="md:grid md:grid-cols-2 grid gap-4 md:justify-around bg-gray-200 p-4">
+                    <Image className="rounded-md md:w-[250px] md:h-[250px] md:self-center justify-center" width={250}
+                           height={250}
                            src="/aboutMe.jpg"
                            alt="My image"/>
-                    <div>
+                    <div className="grid gap-2">
                         <div>About Me</div>
                         <div className="font-normal md:text-md text-sm">Enthusiastic Junior Full Stack Developer,
                             detail-oriented and motivated coding bootcamp
@@ -61,28 +61,61 @@ export default function Home() {
                 <DetailSection id="projects">
                     <div>Projects</div>
                     <div className="font-normal md:text-sm text-xs">
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Food and Recipes
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">
+                                Food and Recipes
+                            </div>
+                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
+                                   src="/foodAndRecipe.png" alt="Food and Recipes" width={250} height={250}/>
+                            This app allows users to search an ingredient, receive the nutrition information and
+                            recipes.
+                            Users can save recipes to their favorites.
                         </div>
-                        This app allows users to search an ingredient, receive the nutrition information and recipes.
-                        Users can save recipes to their favorites.
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Expenses
-                            Tracker </div>
-                        This app allows the user to add the expenses and track it. The expenses trend can be seen in the
-                        line graph and pie chart.
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Weather Dashboard
-                            App </div>
-                        This app shows the weather for the current day and up to next 5 days. Data is retrieved from
-                        open weather API.
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Employee Tracker
-                            SQL</div>
-                        The user can view all the employee from DB, add employee, update role, manager and view the
-                        budget stored in DB. User can delete the data as well.
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Note Taker
-                            Express.js</div>
-                        The user can use this app to create a note, edit, delete and save according to work plan.
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">PWA Text
-                            Editor</div>
-                        This app can be used offline and is downloadable. User can add text, edit and save them.
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Expenses
+                                Tracker
+                            </div>
+                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
+                                   src="/expensesTracker.png" alt="Food and Recipes" width={250} height={250}/>
+                            This app allows the user to add the expenses and track it. The expenses trend can be seen in
+                            the
+                            line graph and pie chart.
+                        </div>
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Weather
+                                Dashboard
+                                App
+                            </div>
+                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
+                                   src="/weatherDashboard.png" alt="Food and Recipes" width={250} height={250}/>
+                            This app shows the weather for the current day and up to next 5 days. Data is retrieved from
+                            open weather API.
+                        </div>
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Employee Tracker
+                                SQL
+                            </div>
+                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
+                                   src="/employeeTracker.png" alt="Food and Recipes" width={250} height={250}/>
+                            The user can view all the employee from DB, add employee, update role, manager and view the
+                            budget stored in DB. User can delete the data as well.
+                        </div>
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Note Taker
+                                Express.js
+                            </div>
+                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
+                                   src="/noteTaker.png" alt="Food and Recipes" width={250} height={250}/>
+                            The user can use this app to create a note, edit, delete and save according to work plan.
+                        </div>
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">PWA Text
+                                Editor
+                            </div>
+                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
+                                   src="/textEditorPWA.png" alt="Food and Recipes" width={250} height={250}/>
+                            This app can be used offline and is downloadable. User can add text, edit and save them.
+                        </div>
                     </div>
                 </DetailSection>
                 <DetailSection id="education">
