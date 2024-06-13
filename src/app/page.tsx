@@ -20,8 +20,8 @@ export default function Home() {
             <div className="flex flex-col gap-4">
                 <DetailSection id="about-me"
                                className="md:grid md:grid-cols-2 grid gap-4 md:justify-around bg-gray-200 p-4">
-                    <Image className="rounded-md md:w-[250px] md:h-[250px] md:self-center justify-center" width={250}
-                           height={250}
+                    <Image className="rounded-md md:w-[250px] md:h-[250px] md:self-center justify-center" width={150}
+                           height={150}
                            src="/aboutMe.jpg"
                            alt="My image"/>
                     <div className="grid gap-2">
@@ -60,13 +60,16 @@ export default function Home() {
                 </DetailSection>
                 <DetailSection id="projects">
                     <div>Projects</div>
-                    <div className="font-normal md:text-sm text-xs">
-                        <div>
+                    <div className="font-normal text-center md:text-sm md:grid-cols-3 grid-cols-2 grid text-xs gap-4">
+                        <div className="place-items-center">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">
                                 Food and Recipes
                             </div>
-                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
-                                   src="/foodAndRecipe.png" alt="Food and Recipes" width={250} height={250}/>
+                            <a href="https://github.com/salidamaharjan/food-and-recipe" target="_blank"> <Image
+                                className="md:w-[200px] md:h-[200px] rounded-md"
+                                src="/foodAndRecipe.png" alt="Food and Recipes" width={150}
+                                height={150}/></a>
+
                             This app allows users to search an ingredient, receive the nutrition information and
                             recipes.
                             Users can save recipes to their favorites.
@@ -75,8 +78,10 @@ export default function Home() {
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Expenses
                                 Tracker
                             </div>
-                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
-                                   src="/expensesTracker.png" alt="Food and Recipes" width={250} height={250}/>
+                            <a href="https://github.com/salidamaharjan/expenses-tracker" target="_blank">
+                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                       src="/expensesTracker.png" alt="Food and Recipes" width={150} height={150}/>
+                            </a>
                             This app allows the user to add the expenses and track it. The expenses trend can be seen in
                             the
                             line graph and pie chart.
@@ -86,8 +91,11 @@ export default function Home() {
                                 Dashboard
                                 App
                             </div>
-                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
-                                   src="/weatherDashboard.png" alt="Food and Recipes" width={250} height={250}/>
+                            <a href="https://github.com/salidamaharjan/weather-dashboard-challenge-06"
+                               target="_blank">
+                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                       src="/weatherDashboard.png" alt="Food and Recipes" width={150} height={150}/>
+                            </a>
                             This app shows the weather for the current day and up to next 5 days. Data is retrieved from
                             open weather API.
                         </div>
@@ -95,8 +103,10 @@ export default function Home() {
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Employee Tracker
                                 SQL
                             </div>
-                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
-                                   src="/employeeTracker.png" alt="Food and Recipes" width={250} height={250}/>
+                            <a href="https://github.com/salidamaharjan/employee-tracker-sql" target="_blank">
+                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                       src="/employeeTracker.png" alt="Food and Recipes" width={150} height={150}/>
+                            </a>
                             The user can view all the employee from DB, add employee, update role, manager and view the
                             budget stored in DB. User can delete the data as well.
                         </div>
@@ -104,16 +114,20 @@ export default function Home() {
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Note Taker
                                 Express.js
                             </div>
-                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
-                                   src="/noteTaker.png" alt="Food and Recipes" width={250} height={250}/>
+                            <a href="https://github.com/salidamaharjan/note-taker-express-js" target="_blank">
+                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                       src="/noteTaker.png" alt="Food and Recipes" width={150} height={150}/>
+                            </a>
                             The user can use this app to create a note, edit, delete and save according to work plan.
                         </div>
                         <div>
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">PWA Text
                                 Editor
                             </div>
-                            <Image className="md:w-[250px] md:h-[250px] md:self-center justify-center"
-                                   src="/textEditorPWA.png" alt="Food and Recipes" width={250} height={250}/>
+                            <a href="https://github.com/salidamaharjan/PWA-text-editor-19" target="_blank">
+                                <Image className="md:w-[200px] md:h-[200px] md:self-center rounded-md justify-center"
+                                       src="/textEditorPWA.png" alt="Food and Recipes" width={150} height={150}/>
+                            </a>
                             This app can be used offline and is downloadable. User can add text, edit and save them.
                         </div>
                     </div>
