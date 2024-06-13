@@ -56,12 +56,11 @@ export default function Home() {
                             </ul>
                         </div>
                     </div>
-
                 </DetailSection>
                 <DetailSection id="projects">
                     <div>Projects</div>
                     <div className="font-normal text-center md:text-sm md:grid-cols-3 grid-cols-2 grid text-xs gap-4">
-                        <div className="place-items-center">
+                        <div>
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">
                                 Food and Recipes
                             </div>
@@ -69,7 +68,6 @@ export default function Home() {
                                 className="md:w-[200px] md:h-[200px] rounded-md"
                                 src="/foodAndRecipe.png" alt="Food and Recipes" width={150}
                                 height={150}/></a>
-
                             This app allows users to search an ingredient, receive the nutrition information and
                             recipes.
                             Users can save recipes to their favorites.
@@ -134,24 +132,47 @@ export default function Home() {
                 </DetailSection>
                 <DetailSection id="education">
                     <div>Education</div>
-                    <div className="font-normal md:text-sm text-xs">
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Full Stack Web
-                            Development Boot
-                            Camp
+                    <div className="grid grid-cols-2 gap-4 font-normal md:text-sm text-xs">
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Full Stack Web
+                                Development Boot
+                                Camp
+                            </div>
+                            <Image src="/full-stack-web-development-certificate.png" alt="Certificate" width={100}
+                                   height={100}/>
+                            University Of Minnesota partnership with edX Minneapolis,
+                            MN
                         </div>
-                        University Of Minnesota partnership with edX Minneapolis,
-                        MN
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Bachelor of Science
-                            in Software
-                            Development</div> Grand Canyon University
-                        Phoenix, AZ
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Post Basic Bachelor
-                            in
-                            Nursing</div>
-                        Kathmandu Model College of Nursing Kathmandu, Nepal
-                        <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Associate Degree in
-                            Nursing</div>
-                        Manmohan Memorial Institute of Health Sciences Kathmandu, Nepal
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Bachelor of
+                                Science
+                                in Software
+                                Development
+                            </div>
+                            <Image src="/GCU.png" alt="Certificate" width={100}
+                                   height={100}/>
+                            Grand Canyon University
+                            Phoenix, AZ
+                        </div>
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Post Basic
+                                Bachelor
+                                in
+                                Nursing
+                            </div>
+                            <Image src="/KAMSHON.png" alt="Certificate" width={100}
+                                   height={100}/>
+                            Kathmandu Model College of Nursing Kathmandu, Nepal
+                        </div>
+                        <div>
+                            <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Associate Degree
+                                in
+                                Nursing
+                            </div>
+                            <Image src="/MMIHS.png" alt="Certificate" width={100}
+                                   height={100}/>
+                            Manmohan Memorial Institute of Health Sciences Kathmandu, Nepal
+                        </div>
                     </div>
                 </DetailSection>
                 <DetailSection id="contact-me" className="flex flex-col">
