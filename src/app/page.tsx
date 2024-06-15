@@ -14,26 +14,33 @@ export default function Home() {
                     <div className="font-medium md:text-2xl text:md"> I am Salida</div>
                     <div className="font-normal md:text-md text-xs">Junior Full Stack Software Developer</div>
                 </div>
-                <Image className="rounded-md md:w-[300px] md:h-[300px]" width={90} height={90} src="/img.jpg"
-                       alt="My image"/>
+                <div className="flex justify-center">
+                    <Image className="rounded-md md:w-[300px] md:h-[300px]" width={90} height={90} src="/img.jpg"
+                           alt="My image"/>
+                </div>
             </div>
             <div className="flex flex-col gap-4">
                 <DetailSection id="about-me"
                                className="md:grid md:grid-cols-2 grid gap-4 md:justify-around rounded-t-md bg-gray-200 p-4">
-                    <Image className="rounded-md md:w-[250px] md:h-[250px] md:self-center justify-center" width={150}
-                           height={150}
-                           src="/aboutMe.jpg"
-                           alt="My image"/>
+                    <div className="flex justify-center">
+                        <Image className="rounded-md md:w-[250px] md:h-[250px] md:self-center justify-center"
+                               width={150}
+                               height={150}
+                               src="/aboutMe.jpg"
+                               alt="My image"/>
+                    </div>
                     <div className="grid gap-2">
                         <div>About Me</div>
                         <div className="font-normal md:text-md text-sm">Enthusiastic Junior Full Stack Developer,
                             detail-oriented and motivated coding bootcamp
-                            graduate with a passion for software development. Seeking an entry- level position where I
+                            graduate with a passion for software development. Seeking an entry- level position where
+                            I
                             can
                             apply my programming skills and contribute to innovative projects.
                         </div>
                         <div className="font-normal md:text-md text-sm">
-                            <div className="md:font-medium font-medium text-red-700 text-sm md:text-md">My Skills</div>
+                            <div className="md:font-medium font-medium text-red-700 text-sm md:text-md">My Skills
+                            </div>
                             <ul className="pl-4">
                                 <li className="list-disc"> Proficient in HTML, CSS, JavaScript.
                                 </li>
@@ -44,7 +51,8 @@ export default function Home() {
                                     Tailwind.
                                 </li>
                                 <li className="list-disc">
-                                    Familiarity with back-end technologies including Node.js, Express.js, and database
+                                    Familiarity with back-end technologies including Node.js, Express.js, and
+                                    database
                                     management
                                     system MongoDB, MySQL.
                                 </li>
@@ -59,7 +67,8 @@ export default function Home() {
                 </DetailSection>
                 <DetailSection id="projects" className="bg-amber-50 flex flex-col gap-2 text-center">
                     <div>Projects</div>
-                    <div className="font-normal text-center md:text-sm md:grid-cols-3 grid-cols-2 grid text-xs gap-4">
+                    <div
+                        className="font-normal text-center md:text-sm md:grid-cols-2 lg:grid-cols-3 grid-cols-1 grid text-xs gap-4">
                         <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">
                                 Food and Recipes
@@ -149,7 +158,7 @@ export default function Home() {
                 </DetailSection>
                 <DetailSection id="education" className="bg-gray-200 flex flex-col gap-2 justify-center items-center">
                     <div>Education</div>
-                    <div className="grid grid-cols-2 gap-4 font-normal md:text-sm text-xs">
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 font-normal md:text-sm text-xs">
                         <div className="flex flex-col text-center gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Full Stack Web
                                 Development Boot
@@ -193,8 +202,8 @@ export default function Home() {
                                 Nursing
                             </div>
                             <div className="flex justify-center">
-                            <Image src="/MMIHS.png" alt="Certificate" width={100}
-                                   height={100}/>
+                                <Image src="/MMIHS.png" alt="Certificate" width={100}
+                                       height={100}/>
                             </div>
                             Manmohan Memorial Institute of Health Sciences Kathmandu, Nepal
                         </div>
