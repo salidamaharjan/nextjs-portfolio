@@ -57,17 +57,19 @@ export default function Home() {
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="projects" className="bg-gray-200 flex flex-col gap-2 text-center">
+                <DetailSection id="projects" className="bg-amber-50 flex flex-col gap-2 text-center">
                     <div>Projects</div>
                     <div className="font-normal text-center md:text-sm md:grid-cols-3 grid-cols-2 grid text-xs gap-4">
                         <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">
                                 Food and Recipes
                             </div>
-                            <a href="https://github.com/salidamaharjan/food-and-recipe" target="_blank"> <Image
-                                className="md:w-[200px] md:h-[200px] rounded-md"
-                                src="/foodAndRecipe.png" alt="Food and Recipes" width={150}
-                                height={150}/></a>
+                            <div className="flex justify-center">
+                                <a href="https://github.com/salidamaharjan/food-and-recipe" target="_blank"> <Image
+                                    className="md:w-[200px] md:h-[200px] rounded-md"
+                                    src="/foodAndRecipe.png" alt="Food and Recipes" width={150}
+                                    height={150}/></a>
+                            </div>
                             This app allows users to search an ingredient, receive the nutrition information and
                             recipes.
                             Users can save recipes to their favorites.
@@ -76,10 +78,13 @@ export default function Home() {
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Expenses
                                 Tracker
                             </div>
-                            <a href="https://github.com/salidamaharjan/expenses-tracker" target="_blank">
-                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
-                                       src="/expensesTracker.png" alt="Food and Recipes" width={150} height={150}/>
-                            </a>
+                            <div className="flex justify-center">
+                                <a href="https://github.com/salidamaharjan/expenses-tracker" target="_blank">
+                                    <Image
+                                        className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                        src="/expensesTracker.png" alt="Food and Recipes" width={150} height={150}/>
+                                </a>
+                            </div>
                             This app allows the user to add the expenses and track it. The expenses trend can be seen in
                             the
                             line graph and pie chart.
@@ -89,11 +94,14 @@ export default function Home() {
                                 Dashboard
                                 App
                             </div>
-                            <a href="https://github.com/salidamaharjan/weather-dashboard-challenge-06"
-                               target="_blank">
-                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
-                                       src="/weatherDashboard.png" alt="Food and Recipes" width={150} height={150}/>
-                            </a>
+                            <div className="flex justify-center">
+                                <a href="https://github.com/salidamaharjan/weather-dashboard-challenge-06"
+                                   target="_blank">
+                                    <Image
+                                        className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                        src="/weatherDashboard.png" alt="Food and Recipes" width={150} height={150}/>
+                                </a>
+                            </div>
                             This app shows the weather for the current day and up to next 5 days. Data is retrieved from
                             open weather API.
                         </div>
@@ -101,10 +109,13 @@ export default function Home() {
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Employee Tracker
                                 SQL
                             </div>
-                            <a href="https://github.com/salidamaharjan/employee-tracker-sql" target="_blank">
-                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
-                                       src="/employeeTracker.png" alt="Food and Recipes" width={150} height={150}/>
-                            </a>
+                            <div className="flex justify-center">
+                                <a href="https://github.com/salidamaharjan/employee-tracker-sql" target="_blank">
+                                    <Image
+                                        className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                        src="/employeeTracker.png" alt="Food and Recipes" width={150} height={150}/>
+                                </a>
+                            </div>
                             The user can view all the employee from DB, add employee, update role, manager and view the
                             budget stored in DB. User can delete the data as well.
                         </div>
@@ -112,70 +123,84 @@ export default function Home() {
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Note Taker
                                 Express.js
                             </div>
-                            <a href="https://github.com/salidamaharjan/note-taker-express-js" target="_blank">
-                                <Image className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
-                                       src="/noteTaker.png" alt="Food and Recipes" width={150} height={150}/>
-                            </a>
+                            <div className="flex justify-center">
+                                <a href="https://github.com/salidamaharjan/note-taker-express-js" target="_blank">
+                                    <Image
+                                        className="md:w-[200px] md:h-[200px] rounded-md md:self-center justify-center"
+                                        src="/noteTaker.png" alt="Food and Recipes" width={150} height={150}/>
+                                </a>
+                            </div>
                             The user can use this app to create a note, edit, delete and save according to work plan.
                         </div>
                         <div className="flex flex-col gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">PWA Text
                                 Editor
                             </div>
-                            <a href="https://github.com/salidamaharjan/PWA-text-editor-19" target="_blank">
-                                <Image className="md:w-[200px] md:h-[200px] md:self-center rounded-md justify-center"
-                                       src="/textEditorPWA.png" alt="Food and Recipes" width={150} height={150}/>
-                            </a>
+                            <div className="flex justify-center">
+                                <a href="https://github.com/salidamaharjan/PWA-text-editor-19" target="_blank">
+                                    <Image
+                                        className="md:w-[200px] md:h-[200px] md:self-center rounded-md justify-center"
+                                        src="/textEditorPWA.png" alt="Food and Recipes" width={150} height={150}/>
+                                </a>
+                            </div>
                             This app can be used offline and is downloadable. User can add text, edit and save them.
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="education" className="bg-gray-200 flex flex-col gap-2 text-center">
+                <DetailSection id="education" className="bg-gray-200 flex flex-col gap-2 justify-center items-center">
                     <div>Education</div>
                     <div className="grid grid-cols-2 gap-4 font-normal md:text-sm text-xs">
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col text-center gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Full Stack Web
                                 Development Boot
                                 Camp
                             </div>
-                            <Image src="/full-stack-web-development-certificate.png" alt="Certificate" width={100}
-                                   height={100}/>
+                            <div className="flex justify-center">
+                                <Image src="/full-stack-web-development-certificate.png" alt="Certificate" width={100}
+                                       height={100}/>
+                            </div>
                             University Of Minnesota partnership with edX Minneapolis,
                             MN
                         </div>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col text-center gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Bachelor of
                                 Science
                                 in Software
                                 Development
                             </div>
-                            <Image src="/GCU.png" alt="Certificate" width={100}
-                                   height={100}/>
+                            <div className="flex justify-center">
+                                <Image src="/GCU.png" alt="Certificate" width={100}
+                                       height={100}/>
+                            </div>
                             Grand Canyon University
                             Phoenix, AZ
                         </div>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col text-center gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Post Basic
                                 Bachelor
                                 in
                                 Nursing
                             </div>
-                            <Image src="/KAMSHON.png" alt="Certificate" width={100}
-                                   height={100}/>
+                            <div className="flex justify-center">
+                                <Image src="/KAMSHON.png" alt="Certificate" width={100}
+                                       height={100}/>
+                            </div>
                             Kathmandu Model College of Nursing Kathmandu, Nepal
                         </div>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col text-center gap-2">
                             <div className="md:font-medium font-medium text-sm md:text-md text-red-700">Associate Degree
                                 in
                                 Nursing
                             </div>
+                            <div className="flex justify-center">
                             <Image src="/MMIHS.png" alt="Certificate" width={100}
                                    height={100}/>
+                            </div>
                             Manmohan Memorial Institute of Health Sciences Kathmandu, Nepal
                         </div>
                     </div>
                 </DetailSection>
-                <DetailSection id="contact-me" className="flex flex-col text-center bg-gray-200 rounded-b-md">
+                <DetailSection id="contact-me" className="flex flex-col text-center bg-amber-50 rounded-b-md">
                     <div>Contact Me</div>
                     <div className="text-md font-normal">You can connect with me through</div>
                     <div className="font-normal flex gap-2 justify-center">
